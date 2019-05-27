@@ -1,0 +1,2 @@
+<p>Uus leht</p>
+<p>Uuendus 2</p>

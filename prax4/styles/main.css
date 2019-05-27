@@ -1,0 +1,31 @@
+nav {
+    background-color: blue;
+}
+
+main {
+    background-color: yellow;
+    width: 70%;
+    float: left;
+    text-align: center;
+}
+
+article {
+    background-color: red;
+    margin: auto;
+    width: 75%;
+}
+
+header {
+    background-color: lightcoral;
+}
+
+details {
+    background-color: lightsalmon;
+}
+
+aside {
+    background-color: green;
+    width: 30%;
+    float: left;
+    text-align: center;
+}

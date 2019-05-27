@@ -1,0 +1,142 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: #111133;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #CFDDCC;
+}
+
+.menu {
+    width: 99.5%;
+    height: 50px;
+    float: left;
+    margin: 4px;
+    /*background: #900000;*/
+    background: #C02010;
+}
+
+.content {
+    height: 300px;
+}
+
+.playerDisplay {
+    width: 25%;
+    height: 100%;
+    float: left;
+    margin: 4px;
+    text-align: center;
+    /*background: #6666FF;*/
+    background: #3498DB;
+}
+
+.resultDisplay {
+    height: 77.4%;
+    margin: 4px;
+    float: left;
+    text-align: center;
+    /*background: #2ECC71;*/
+    background: #20CC20;
+}
+
+.scoreDisplay {
+    height: 20%;
+    margin: 4px;
+    float: left;
+    text-align: center;
+    background: #20CC20;
+    /*background: #27AE60;*/
+}
+
+.totalTimeDisplay {
+    float: left;
+    height: 20%;
+    margin: 4px;
+    text-align: center;
+    background: #20CC20;
+}
+
+.enemyDisplay {
+    height: 100%;
+    float: left;
+    margin: 4px;
+    text-align: center;
+    background: #F1C40F;
+}
+
+#enemyDisplayName {
+    color: #333355;
+}
+
+.choiceHolder {
+    width: 20%;
+}
+
+img::selection {
+    background: transparent;
+    color: transparent;
+}
+
+.player {
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: auto;
+}
+
+.disabled:hover {
+    opacity: 1;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 3px;
+}
+
+.timerHolder {
+    background: #C02010;
+    width: 50%;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#playerTimer, #enemyTimer, #totalTimer {
+    font-size: 200%;
+}
+
+button {
+    border: 2px solid #44A8FB;
+    background-color: #3498DB;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1% 0;
+}
+
+form {
+    background: #3498DB;
+    color: #FFDDCC;
+    width: 97.5%;
+    margin: 4px;
+    padding-top: 1%;
+    padding-left: 2%;
+    float: left;
+}
+
+input[type="radio"] {
+    margin-left: 5%;
+}
+
+.submit {
+    border-color: #B01000;
+    background-color: #C02010;
+    margin-left: 2%;
+}

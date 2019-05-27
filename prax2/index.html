@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1200px)" href="styles/desktop.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 601px) and (max-width: 1199px)" href="styles/two_column.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="styles/one_column.css"/>    
+    <script src="scripts/rps.js"></script>
+    <title>Kivi-Paber-Käärid</title>
+</head>
+<body>
+    <div class="menu">
+        <button id="toggleGameState" style="margin: 0.5%;" onclick="toggleGame()">Start</button>
+        <button onclick="restart()">Restart</button>
+    </div>
+    <div class="content">
+        <div class="playerDisplay">
+            <h3>Mängija</h3>
+            <img src="images/rock.png" alt="Kivi" class="choiceHolder player disabled" id="playerRock" onclick="getPlayerChoice(rock)" onmouseleave="clearEnemyMoveHighlight()"/>
+            <img src="images/paper.png" alt="Paber" class="choiceHolder player disabled" id="playerPaper" onclick="getPlayerChoice(paper)" onmouseleave="clearEnemyMoveHighlight()"/>
+            <img src="images/scissors.png" alt="Käärid" class="choiceHolder player disabled" id="playerScissors" onclick="getPlayerChoice(scissors)" onmouseleave="clearEnemyMoveHighlight()"/>
+            <div class="timerHolder">
+                <p>Timer:</p>
+                <div id="playerTimer">
+                    <p>00:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="enemyDisplay">
+            <h3 id="enemyDisplayName">Arvuti</h3>
+            <img src="images/rock.png" alt="Kivi" id="enemyRock" class="choiceHolder"/>
+            <img src="images/paper.png" alt="Paber" id="enemyPaper" class="choiceHolder"/>
+            <img src="images/scissors.png" alt="Käärid" id="enemyScissors" class="choiceHolder"/>
+            <div class="timerHolder">
+                <p>Timer:</p>
+                <div id="enemyTimer">
+                    <p>00:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="scoreDisplay">
+            <div>
+                <h3>Skoor</h3>
+                <div id="gameTotalStatus"></div>
+            </div>
+        </div>
+        <div class="totalTimeDisplay">
+            <h3>Aega kulunud</h3>
+            <div id="totalTimer">
+                <p>00:00</p>
+            </div>
+        </div>
+        <div class="resultDisplay">
+            <div>
+                <h3>Tulemused</h3>
+                <div id="scoreHistoryDisplay"></div>
+            </div>
+        </div>
+    </div>
+</body>
