@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://gitlab.com/snippets/27287 -->
+<html class="turbolinks-progress-bar" lang="en"><head prefix="og: http://ogp.me/ns#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="Linked List · Snippets" property="og:title">
+<meta content="GitLab.com" property="og:description">
+<meta content="https://gitlab.com/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png" property="og:image">
+<meta content="https://gitlab.com/snippets/27287" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="Linked List · Snippets" property="twitter:title">
+<meta content="GitLab.com" property="twitter:description">
+<meta content="https://gitlab.com/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png" property="twitter:image">
+
+<title>Linked List · Snippets · GitLab</title>
+<meta content="GitLab.com" name="description">
+<link rel="shortcut icon" type="image/x-icon" href="https://gitlab.com/assets/favicon-075eba76312e8421991a0c1f89a89ee81678bcde72319dd3e8047e2a47cd3a42.ico">
+<link rel="stylesheet" media="all" href="./Linked List · Snippets · GitLab_files/application-1439ba31fbfa98d1461345e86c84ba6564c99859d1675c190ad1022f881acb33.css">
+<link rel="stylesheet" media="print" href="./Linked List · Snippets · GitLab_files/print-68eed6d8135d858318821e790e25da27b2b4b9b8dbb1993fa6765d8e2e3e16ee.css">
+<script type="text/javascript" async="" defer="" src="./Linked List · Snippets · GitLab_files/piwik.js"></script><script src="./Linked List · Snippets · GitLab_files/application-8555cc07c359e2a4cdd8666024cfed850e832aba6ddc608be51e5a165e3292fd.js"></script><link href="chrome-extension://lnkdbjbjpnpjeciipoaflmpcddinpjjp/mytube.css" rel="stylesheet" type="text/css"><script src="chrome-extension://lnkdbjbjpnpjeciipoaflmpcddinpjjp/mutationObserver.js"></script><script src="chrome-extension://lnkdbjbjpnpjeciipoaflmpcddinpjjp/mytube.js"></script><mytubeelement id="myTubeRelayElementToPage" event="preferencesUpdated" data="{&quot;bundle&quot;:{&quot;label_delimitor&quot;:&quot;:&quot;,&quot;percentage&quot;:&quot;%&quot;,&quot;smart_buffer&quot;:&quot;Smart Buffer&quot;,&quot;start_playing_when_buffered&quot;:&quot;Start playing when buffered&quot;,&quot;sound&quot;:&quot;Sound&quot;,&quot;desktop_notification&quot;:&quot;Desktop Notification&quot;,&quot;continuation_on_next_line&quot;:&quot;-&quot;,&quot;loop&quot;:&quot;Loop&quot;,&quot;only_notify&quot;:&quot;Only Notify&quot;,&quot;estimated_time&quot;:&quot;Estimated Time&quot;,&quot;global_preferences&quot;:&quot;Global Preferences&quot;,&quot;no_notification_supported_on_your_browser&quot;:&quot;No notification style supported on your browser version&quot;,&quot;video_buffered&quot;:&quot;Video Buffered&quot;,&quot;buffered&quot;:&quot;Buffered&quot;,&quot;hyphen&quot;:&quot;-&quot;,&quot;buffered_message&quot;:&quot;The video has been buffered as requested and is ready to play.&quot;,&quot;not_supported&quot;:&quot;Not Supported&quot;,&quot;on&quot;:&quot;On&quot;,&quot;off&quot;:&quot;Off&quot;,&quot;click_to_enable_for_this_site&quot;:&quot;Click to enable for this site&quot;,&quot;desktop_notification_denied&quot;:&quot;You have denied permission for desktop notification for this site&quot;,&quot;notification_status_delimitor&quot;:&quot;;&quot;,&quot;error&quot;:&quot;Error&quot;,&quot;adblock_interferance_message&quot;:&quot;Adblock (or similar extension) is known to interfere with SmartVideo. Please add this url to adblock whitelist.&quot;,&quot;calculating&quot;:&quot;Calculating&quot;,&quot;waiting&quot;:&quot;Waiting&quot;,&quot;will_start_buffering_when_initialized&quot;:&quot;Will start buffering when initialized&quot;,&quot;will_start_playing_when_initialized&quot;:&quot;Will start playing when initialized&quot;,&quot;completed&quot;:&quot;Completed&quot;,&quot;buffering_stalled&quot;:&quot;Buffering is stalled. Will stop.&quot;,&quot;stopped&quot;:&quot;Stopped&quot;,&quot;hr&quot;:&quot;Hr&quot;,&quot;min&quot;:&quot;Min&quot;,&quot;sec&quot;:&quot;Sec&quot;,&quot;any_moment&quot;:&quot;Any Moment&quot;,&quot;popup_donate_to&quot;:&quot;Donate to&quot;,&quot;extension_id&quot;:&quot;lnkdbjbjpnpjeciipoaflmpcddinpjjp&quot;},&quot;prefs&quot;:{&quot;desktopNotification&quot;:true,&quot;soundNotification&quot;:true,&quot;logLevel&quot;:0,&quot;enable&quot;:true,&quot;loop&quot;:false,&quot;hidePopup&quot;:false,&quot;autoPlay&quot;:false,&quot;autoBuffer&quot;:false,&quot;autoPlayOnBuffer&quot;:false,&quot;autoPlayOnBufferPercentage&quot;:42,&quot;autoPlayOnSmartBuffer&quot;:true,&quot;quality&quot;:&quot;default&quot;,&quot;fshd&quot;:false,&quot;onlyNotification&quot;:false,&quot;enableFullScreen&quot;:true,&quot;saveBandwidth&quot;:false,&quot;hideAnnotations&quot;:false,&quot;turnOffPagedBuffering&quot;:false}}"></mytubeelement><mytubeelement id="myTubeRelayElementToTab" event="relayPrefs" data="{&quot;loadBundle&quot;:true}"></mytubeelement><style>html.turbolinks-progress-bar::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: #0076ff;
+  height: 3px;
+  opacity: 0.99;
+  width: 0%;
+  transition: width 300ms ease-out, opacity 150ms ease-in;
+  transform: translate3d(0,0,0);
+}</style>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="tMrkPkMeojXKtl9BzOuOAbvF8DgU6BzJqAs1LhySJGTHJe3U6ngFcy6AyNQgx80hEtrVoBn90CnyUGX9hHv2hg==">
+<meta content="origin-when-cross-origin" name="referrer">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<meta content="#474D57" name="theme-color">
+<link rel="apple-touch-icon" type="image/x-icon" href="https://gitlab.com/assets/touch-icon-iphone-5a9cee0e8a51212e70b90c87c12f382c428870c0ff67d1eb034d884b78d2dae7.png">
+<link rel="apple-touch-icon" type="image/x-icon" href="https://gitlab.com/assets/touch-icon-ipad-a6eec6aeb9da138e507593b464fdac213047e49d3093fc30e90d9a995df83ba3.png" sizes="76x76">
+<link rel="apple-touch-icon" type="image/x-icon" href="https://gitlab.com/assets/touch-icon-iphone-retina-72e2aadf86513a56e050e7f0f2355deaa19cc17ed97bbe5147847f2748e5a3e3.png" sizes="120x120">
+<link rel="apple-touch-icon" type="image/x-icon" href="https://gitlab.com/assets/touch-icon-ipad-retina-8ebe416f5313483d9c1bc772b5bbe03ecad52a54eba443e5215a22caed2a16a2.png" sizes="152x152">
+<link color="rgb(226, 67, 41)" href="https://gitlab.com/assets/logo-d36b5212042cebc89b96df4bf6ac24e43db316143e89926c0db839ff694d2de4.svg" rel="mask-icon">
+<meta content="/assets/msapplication-tile-1196ec67452f618d39cdd85e2e3a542f76574c071051ae7effbfde01710eb17d.png" name="msapplication-TileImage">
+<meta content="#30353E" name="msapplication-TileColor">
+
+
+<!-- Piwik -->
+<script>
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.gitlab.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript>&lt;p&gt;&lt;img src="//piwik.gitlab.com/piwik.php?idsite=1" style="border:0;" alt="" /&gt;&lt;/p&gt;</noscript>
+<!-- End Piwik Code -->
+
+
+<style>
+  [data-user-is] {
+    display: none !important;
+  }
+  
+  [data-user-is=""] {
+    display: block !important;
+  }
+  
+  [data-user-is=""][data-display="inline"] {
+    display: inline !important;
+  }
+  
+  [data-user-is-not] {
+    display: block !important;
+  }
+  
+  [data-user-is-not][data-display="inline"] {
+    display: inline !important;
+  }
+  
+  [data-user-is-not=""] {
+    display: none !important;
+  }
+</style>
+
+</head>
+
+<body class="ui_charcoal" data-group="" data-page="snippets:show" data-project="">
+<script>
+//<![CDATA[
+window.gon={};gon.api_version="v3";gon.default_avatar_url="https:\/\/gitlab.com\/assets\/no_avatar-849f9c04a3a0d0cea2424ae97b27447dc64a7dbfae83c036c45b403392f0e8ba.png";gon.max_file_size=10;gon.relative_url_root="";gon.shortcuts_path="\/help\/shortcuts";gon.user_color_scheme="white";gon.award_menu_url="\/emojis";
+//]]>
+</script>
+
+<header class="navbar navbar-fixed-top navbar-gitlab">
+<div class="container-fluid">
+<div class="header-content">
+<button aria-label="Toggle global navigation" class="side-nav-toggle" type="button">
+<span class="sr-only">Toggle navigation</span>
+<i class="fa fa-bars"></i>
+</button>
+<button class="navbar-toggle" type="button">
+<span class="sr-only">Toggle navigation</span>
+<i class="fa fa-ellipsis-v"></i>
+</button>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="hidden-sm hidden-xs">
+<div class="search search-form">
+<form class="navbar-form" action="https://gitlab.com/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓"><div class="search-input-container">
+<div class="search-input-wrap">
+<div class="dropdown" data-url="/search/autocomplete">
+<input type="search" name="search" id="search" placeholder="Search" class="search-input dropdown-menu-toggle disabled" spellcheck="false" tabindex="1" autocomplete="off" data-toggle="dropdown" value="">
+<div class="dropdown-menu dropdown-select">
+<div class="dropdown-content"><ul>
+<li>
+<a class="is-focused dropdown-menu-empty-link">
+Loading...
+</a>
+</li>
+</ul>
+</div><div class="dropdown-loading"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+<i class="search-icon"></i>
+<i class="clear-icon js-clear-input"></i>
+</div>
+</div>
+</div>
+<input type="hidden" name="group_id" id="group_id">
+<input type="hidden" name="project_id" id="search_project_id" value="">
+<script>
+  gl.dashboardOptions = {
+    issuesPath: "https://gitlab.com/dashboard/issues",
+    mrPath: "https://gitlab.com/dashboard/merge_requests"
+  };
+</script>
+<input type="hidden" name="snippets" id="snippets" value="true">
+<input type="hidden" name="repository_ref" id="repository_ref">
+
+<div class="search-autocomplete-opts hide" data-autocomplete-path="/search/autocomplete"></div>
+</form></div>
+
+</li>
+<li class="visible-sm visible-xs">
+<a title="Search" aria-label="Search" data-toggle="tooltip" data-placement="bottom" data-container="body" href="https://gitlab.com/search"><i class="fa fa-search"></i>
+</a></li>
+<li>
+<div>
+<a class="btn btn-sign-in btn-success" href="https://gitlab.com/users/sign_in?redirect_to_referer=yes">Sign in</a>
+</div>
+</li>
+</ul>
+</div>
+<h1 class="title"><a href="https://gitlab.com/snippets">Snippets</a></h1>
+<div class="header-logo">
+<a class="home" title="Dashboard" id="logo" href="https://gitlab.com/"><svg width="36" height="36" class="tanuki-logo">
+  <path class="tanuki-shape tanuki-left-ear" fill="#e24329" d="M2 14l9.38 9v-9l-4-12.28c-.205-.632-1.176-.632-1.38 0z"></path>
+  <path class="tanuki-shape tanuki-right-ear" fill="#e24329" d="M34 14l-9.38 9v-9l4-12.28c.205-.632 1.176-.632 1.38 0z"></path>
+  <path class="tanuki-shape tanuki-nose" fill="#e24329" d="M18,34.38 3,14 33,14 Z"></path>
+  <path class="tanuki-shape tanuki-left-eye" fill="#fc6d26" d="M18,34.38 11.38,14 2,14 6,25Z"></path>
+  <path class="tanuki-shape tanuki-right-eye" fill="#fc6d26" d="M18,34.38 24.62,14 34,14 30,25Z"></path>
+  <path class="tanuki-shape tanuki-left-cheek" fill="#fca326" d="M2 14L.1 20.16c-.18.565 0 1.2.5 1.56l17.42 12.66z"></path>
+  <path class="tanuki-shape tanuki-right-cheek" fill="#fca326" d="M34 14l1.9 6.16c.18.565 0 1.2-.5 1.56L18 34.38z"></path>
+</svg>
+
+</a></div>
+
+</div>
+</div>
+</header>
+
+
+<div class="page-with-sidebar">
+<div class="sidebar-wrapper nicescroll">
+<div class="sidebar-action-buttons">
+<a class="nav-header-btn toggle-nav-collapse" title="Open/Close" href="https://gitlab.com/snippets/27287#"><span class="sr-only">Toggle navigation</span>
+<i class="fa fa-bars"></i>
+</a><a class="nav-header-btn pin-nav-btn has-tooltip  js-nav-pin" title="" data-placement="right" data-container="body" href="https://gitlab.com/snippets/27287#" data-original-title="Pin navigation"><span class="sr-only">Toggle navigation pinning</span>
+<i class="fa fa-fw fa-thumb-tack"></i>
+</a></div>
+<ul class="nav nav-sidebar" tabindex="0" style="overflow: hidden; outline: none;">
+<li class="home"><a title="Projects" href="https://gitlab.com/explore"><span>
+Projects
+</span>
+</a></li><li class=""><a title="Groups" href="https://gitlab.com/explore/groups"><span>
+Groups
+</span>
+</a></li><li class="active"><a title="Snippets" href="https://gitlab.com/explore/snippets"><span>
+Snippets
+</span>
+</a></li><li class=""><a title="Help" href="https://gitlab.com/help"><span>
+Help
+</span>
+</a></li></ul>
+
+<div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr" style="width: 7px; z-index: 1000; cursor: default; position: absolute; top: 50px; left: 213px; height: 660px; display: none;"><div class="nicescroll-cursors" style="position: relative; top: 0px; float: right; width: 5px; height: 0px; border: 1px solid rgb(255, 255, 255); border-radius: 5px; background-color: rgb(255, 255, 255); background-clip: padding-box;"></div></div><div id="ascrail2000-hr" class="nicescroll-rails nicescroll-rails-hr" style="height: 7px; z-index: 1000; top: 703px; left: 0px; position: absolute; cursor: default; display: none;"><div class="nicescroll-cursors" style="position: absolute; top: 0px; height: 5px; width: 0px; border: 1px solid rgb(255, 255, 255); border-radius: 5px; background-color: rgb(255, 255, 255); background-clip: padding-box;"></div></div></div>
+<div class="content-wrapper">
+
+
+<div class="flash-container flash-container-page">
+</div>
+
+
+<div class="container-fluid container-limited ">
+<div class="content">
+<div class="detail-page-header clearfix">
+<div class="snippet-box has-tooltip inline append-right-5" data-container="body" title="The snippet can be accessed without any authentication.">
+<span class="sr-only">
+Public
+</span>
+<i class="fa fa-globe"></i>
+</div>
+<strong class="item-title">
+Snippet $27287
+</strong>
+<span class="creator">
+authored
+<time class="js-timeago snippet_updated_ago" datetime="2016-09-27T12:07:18Z" title="" data-toggle="tooltip" data-placement="bottom" data-container="body" data-original-title="Sep 27, 2016 3:07pm GMT+0300">a day ago</time><script>
+//<![CDATA[
+$('.js-timeago-pending').removeClass('js-timeago-pending').timeago()
+//]]>
+</script>
+<span>
+<i title="edited" class="fa fa-edit"></i>
+<time class="js-timeago snippet_edited_ago" datetime="2016-09-28T09:01:37Z" title="" data-toggle="tooltip" data-placement="bottom" data-container="body" data-original-title="Sep 28, 2016 12:01pm GMT+0300">about 7 hours ago</time><script>
+//<![CDATA[
+$('.js-timeago-pending').removeClass('js-timeago-pending').timeago()
+//]]>
+</script>
+</span>
+by <a class="author_link  " href="https://gitlab.com/u/not-much-io"><img width="24" class="avatar avatar-inline s24 hidden-xs" alt="" src="./Linked List · Snippets · GitLab_files/avatar.png"><span class="author item-title ">Kristo Koert</span></a>
+</span>
+<div class="snippet-actions">
+<div class="hidden-xs">
+</div>
+
+</div>
+</div>
+<h2 class="snippet-title prepend-top-0 append-bottom-0">
+Linked List
+</h2>
+
+<article class="file-holder snippet-file-content">
+<div class="file-title">
+<i class="fa fa-file-text-o fa-fw"></i>
+linked_list.py
+<div class="file-actions">
+<button class="btn btn-clipboard" data-toggle="tooltip" data-placement="bottom" data-container="body" data-clipboard-target=".blob-content[data-blob-id=&#39;27287&#39;]" type="button" title="Copy to Clipboard"><i class="fa fa-clipboard"></i></button>
+<a class="btn btn-sm" target="_blank" href="https://gitlab.com/snippets/27287/raw">Raw</a>
+</div>
+</div>
+<div class="file-content code js-syntax-highlight white">
+<div class="line-numbers">
+<a class="diff-line-num" data-line-number="1" href="https://gitlab.com/snippets/27287#L1" id="L1">
+<i class="fa fa-link"></i>
+1
+</a>
+<a class="diff-line-num" data-line-number="2" href="https://gitlab.com/snippets/27287#L2" id="L2">
+<i class="fa fa-link"></i>
+2
+</a>
+<a class="diff-line-num" data-line-number="3" href="https://gitlab.com/snippets/27287#L3" id="L3">
+<i class="fa fa-link"></i>
+3
+</a>
+<a class="diff-line-num" data-line-number="4" href="https://gitlab.com/snippets/27287#L4" id="L4">
+<i class="fa fa-link"></i>
+4
+</a>
+<a class="diff-line-num" data-line-number="5" href="https://gitlab.com/snippets/27287#L5" id="L5">
+<i class="fa fa-link"></i>
+5
+</a>
+<a class="diff-line-num" data-line-number="6" href="https://gitlab.com/snippets/27287#L6" id="L6">
+<i class="fa fa-link"></i>
+6
+</a>
+<a class="diff-line-num" data-line-number="7" href="https://gitlab.com/snippets/27287#L7" id="L7">
+<i class="fa fa-link"></i>
+7
+</a>
+<a class="diff-line-num" data-line-number="8" href="https://gitlab.com/snippets/27287#L8" id="L8">
+<i class="fa fa-link"></i>
+8
+</a>
+<a class="diff-line-num" data-line-number="9" href="https://gitlab.com/snippets/27287#L9" id="L9">
+<i class="fa fa-link"></i>
+9
+</a>
+<a class="diff-line-num" data-line-number="10" href="https://gitlab.com/snippets/27287#L10" id="L10">
+<i class="fa fa-link"></i>
+10
+</a>
+<a class="diff-line-num" data-line-number="11" href="https://gitlab.com/snippets/27287#L11" id="L11">
+<i class="fa fa-link"></i>
+11
+</a>
+<a class="diff-line-num" data-line-number="12" href="https://gitlab.com/snippets/27287#L12" id="L12">
+<i class="fa fa-link"></i>
+12
+</a>
+<a class="diff-line-num" data-line-number="13" href="https://gitlab.com/snippets/27287#L13" id="L13">
+<i class="fa fa-link"></i>
+13
+</a>
+<a class="diff-line-num" data-line-number="14" href="https://gitlab.com/snippets/27287#L14" id="L14">
+<i class="fa fa-link"></i>
+14
+</a>
+<a class="diff-line-num" data-line-number="15" href="https://gitlab.com/snippets/27287#L15" id="L15">
+<i class="fa fa-link"></i>
+15
+</a>
+<a class="diff-line-num" data-line-number="16" href="https://gitlab.com/snippets/27287#L16" id="L16">
+<i class="fa fa-link"></i>
+16
+</a>
+<a class="diff-line-num" data-line-number="17" href="https://gitlab.com/snippets/27287#L17" id="L17">
+<i class="fa fa-link"></i>
+17
+</a>
+<a class="diff-line-num" data-line-number="18" href="https://gitlab.com/snippets/27287#L18" id="L18">
+<i class="fa fa-link"></i>
+18
+</a>
+<a class="diff-line-num" data-line-number="19" href="https://gitlab.com/snippets/27287#L19" id="L19">
+<i class="fa fa-link"></i>
+19
+</a>
+<a class="diff-line-num" data-line-number="20" href="https://gitlab.com/snippets/27287#L20" id="L20">
+<i class="fa fa-link"></i>
+20
+</a>
+<a class="diff-line-num" data-line-number="21" href="https://gitlab.com/snippets/27287#L21" id="L21">
+<i class="fa fa-link"></i>
+21
+</a>
+<a class="diff-line-num" data-line-number="22" href="https://gitlab.com/snippets/27287#L22" id="L22">
+<i class="fa fa-link"></i>
+22
+</a>
+<a class="diff-line-num" data-line-number="23" href="https://gitlab.com/snippets/27287#L23" id="L23">
+<i class="fa fa-link"></i>
+23
+</a>
+<a class="diff-line-num" data-line-number="24" href="https://gitlab.com/snippets/27287#L24" id="L24">
+<i class="fa fa-link"></i>
+24
+</a>
+<a class="diff-line-num" data-line-number="25" href="https://gitlab.com/snippets/27287#L25" id="L25">
+<i class="fa fa-link"></i>
+25
+</a>
+<a class="diff-line-num" data-line-number="26" href="https://gitlab.com/snippets/27287#L26" id="L26">
+<i class="fa fa-link"></i>
+26
+</a>
+<a class="diff-line-num" data-line-number="27" href="https://gitlab.com/snippets/27287#L27" id="L27">
+<i class="fa fa-link"></i>
+27
+</a>
+<a class="diff-line-num" data-line-number="28" href="https://gitlab.com/snippets/27287#L28" id="L28">
+<i class="fa fa-link"></i>
+28
+</a>
+<a class="diff-line-num" data-line-number="29" href="https://gitlab.com/snippets/27287#L29" id="L29">
+<i class="fa fa-link"></i>
+29
+</a>
+<a class="diff-line-num" data-line-number="30" href="https://gitlab.com/snippets/27287#L30" id="L30">
+<i class="fa fa-link"></i>
+30
+</a>
+<a class="diff-line-num" data-line-number="31" href="https://gitlab.com/snippets/27287#L31" id="L31">
+<i class="fa fa-link"></i>
+31
+</a>
+<a class="diff-line-num" data-line-number="32" href="https://gitlab.com/snippets/27287#L32" id="L32">
+<i class="fa fa-link"></i>
+32
+</a>
+<a class="diff-line-num" data-line-number="33" href="https://gitlab.com/snippets/27287#L33" id="L33">
+<i class="fa fa-link"></i>
+33
+</a>
+<a class="diff-line-num" data-line-number="34" href="https://gitlab.com/snippets/27287#L34" id="L34">
+<i class="fa fa-link"></i>
+34
+</a>
+<a class="diff-line-num" data-line-number="35" href="https://gitlab.com/snippets/27287#L35" id="L35">
+<i class="fa fa-link"></i>
+35
+</a>
+<a class="diff-line-num" data-line-number="36" href="https://gitlab.com/snippets/27287#L36" id="L36">
+<i class="fa fa-link"></i>
+36
+</a>
+<a class="diff-line-num" data-line-number="37" href="https://gitlab.com/snippets/27287#L37" id="L37">
+<i class="fa fa-link"></i>
+37
+</a>
+<a class="diff-line-num" data-line-number="38" href="https://gitlab.com/snippets/27287#L38" id="L38">
+<i class="fa fa-link"></i>
+38
+</a>
+<a class="diff-line-num" data-line-number="39" href="https://gitlab.com/snippets/27287#L39" id="L39">
+<i class="fa fa-link"></i>
+39
+</a>
+<a class="diff-line-num" data-line-number="40" href="https://gitlab.com/snippets/27287#L40" id="L40">
+<i class="fa fa-link"></i>
+40
+</a>
+<a class="diff-line-num" data-line-number="41" href="https://gitlab.com/snippets/27287#L41" id="L41">
+<i class="fa fa-link"></i>
+41
+</a>
+<a class="diff-line-num" data-line-number="42" href="https://gitlab.com/snippets/27287#L42" id="L42">
+<i class="fa fa-link"></i>
+42
+</a>
+<a class="diff-line-num" data-line-number="43" href="https://gitlab.com/snippets/27287#L43" id="L43">
+<i class="fa fa-link"></i>
+43
+</a>
+<a class="diff-line-num" data-line-number="44" href="https://gitlab.com/snippets/27287#L44" id="L44">
+<i class="fa fa-link"></i>
+44
+</a>
+<a class="diff-line-num" data-line-number="45" href="https://gitlab.com/snippets/27287#L45" id="L45">
+<i class="fa fa-link"></i>
+45
+</a>
+<a class="diff-line-num" data-line-number="46" href="https://gitlab.com/snippets/27287#L46" id="L46">
+<i class="fa fa-link"></i>
+46
+</a>
+<a class="diff-line-num" data-line-number="47" href="https://gitlab.com/snippets/27287#L47" id="L47">
+<i class="fa fa-link"></i>
+47
+</a>
+<a class="diff-line-num" data-line-number="48" href="https://gitlab.com/snippets/27287#L48" id="L48">
+<i class="fa fa-link"></i>
+48
+</a>
+<a class="diff-line-num" data-line-number="49" href="https://gitlab.com/snippets/27287#L49" id="L49">
+<i class="fa fa-link"></i>
+49
+</a>
+<a class="diff-line-num" data-line-number="50" href="https://gitlab.com/snippets/27287#L50" id="L50">
+<i class="fa fa-link"></i>
+50
+</a>
+<a class="diff-line-num" data-line-number="51" href="https://gitlab.com/snippets/27287#L51" id="L51">
+<i class="fa fa-link"></i>
+51
+</a>
+<a class="diff-line-num" data-line-number="52" href="https://gitlab.com/snippets/27287#L52" id="L52">
+<i class="fa fa-link"></i>
+52
+</a>
+<a class="diff-line-num" data-line-number="53" href="https://gitlab.com/snippets/27287#L53" id="L53">
+<i class="fa fa-link"></i>
+53
+</a>
+<a class="diff-line-num" data-line-number="54" href="https://gitlab.com/snippets/27287#L54" id="L54">
+<i class="fa fa-link"></i>
+54
+</a>
+<a class="diff-line-num" data-line-number="55" href="https://gitlab.com/snippets/27287#L55" id="L55">
+<i class="fa fa-link"></i>
+55
+</a>
+<a class="diff-line-num" data-line-number="56" href="https://gitlab.com/snippets/27287#L56" id="L56">
+<i class="fa fa-link"></i>
+56
+</a>
+<a class="diff-line-num" data-line-number="57" href="https://gitlab.com/snippets/27287#L57" id="L57">
+<i class="fa fa-link"></i>
+57
+</a>
+<a class="diff-line-num" data-line-number="58" href="https://gitlab.com/snippets/27287#L58" id="L58">
+<i class="fa fa-link"></i>
+58
+</a>
+<a class="diff-line-num" data-line-number="59" href="https://gitlab.com/snippets/27287#L59" id="L59">
+<i class="fa fa-link"></i>
+59
+</a>
+<a class="diff-line-num" data-line-number="60" href="https://gitlab.com/snippets/27287#L60" id="L60">
+<i class="fa fa-link"></i>
+60
+</a>
+<a class="diff-line-num" data-line-number="61" href="https://gitlab.com/snippets/27287#L61" id="L61">
+<i class="fa fa-link"></i>
+61
+</a>
+<a class="diff-line-num" data-line-number="62" href="https://gitlab.com/snippets/27287#L62" id="L62">
+<i class="fa fa-link"></i>
+62
+</a>
+<a class="diff-line-num" data-line-number="63" href="https://gitlab.com/snippets/27287#L63" id="L63">
+<i class="fa fa-link"></i>
+63
+</a>
+<a class="diff-line-num" data-line-number="64" href="https://gitlab.com/snippets/27287#L64" id="L64">
+<i class="fa fa-link"></i>
+64
+</a>
+<a class="diff-line-num" data-line-number="65" href="https://gitlab.com/snippets/27287#L65" id="L65">
+<i class="fa fa-link"></i>
+65
+</a>
+<a class="diff-line-num" data-line-number="66" href="https://gitlab.com/snippets/27287#L66" id="L66">
+<i class="fa fa-link"></i>
+66
+</a>
+<a class="diff-line-num" data-line-number="67" href="https://gitlab.com/snippets/27287#L67" id="L67">
+<i class="fa fa-link"></i>
+67
+</a>
+<a class="diff-line-num" data-line-number="68" href="https://gitlab.com/snippets/27287#L68" id="L68">
+<i class="fa fa-link"></i>
+68
+</a>
+<a class="diff-line-num" data-line-number="69" href="https://gitlab.com/snippets/27287#L69" id="L69">
+<i class="fa fa-link"></i>
+69
+</a>
+<a class="diff-line-num" data-line-number="70" href="https://gitlab.com/snippets/27287#L70" id="L70">
+<i class="fa fa-link"></i>
+70
+</a>
+<a class="diff-line-num" data-line-number="71" href="https://gitlab.com/snippets/27287#L71" id="L71">
+<i class="fa fa-link"></i>
+71
+</a>
+<a class="diff-line-num" data-line-number="72" href="https://gitlab.com/snippets/27287#L72" id="L72">
+<i class="fa fa-link"></i>
+72
+</a>
+<a class="diff-line-num" data-line-number="73" href="https://gitlab.com/snippets/27287#L73" id="L73">
+<i class="fa fa-link"></i>
+73
+</a>
+<a class="diff-line-num" data-line-number="74" href="https://gitlab.com/snippets/27287#L74" id="L74">
+<i class="fa fa-link"></i>
+74
+</a>
+<a class="diff-line-num" data-line-number="75" href="https://gitlab.com/snippets/27287#L75" id="L75">
+<i class="fa fa-link"></i>
+75
+</a>
+<a class="diff-line-num" data-line-number="76" href="https://gitlab.com/snippets/27287#L76" id="L76">
+<i class="fa fa-link"></i>
+76
+</a>
+<a class="diff-line-num" data-line-number="77" href="https://gitlab.com/snippets/27287#L77" id="L77">
+<i class="fa fa-link"></i>
+77
+</a>
+<a class="diff-line-num" data-line-number="78" href="https://gitlab.com/snippets/27287#L78" id="L78">
+<i class="fa fa-link"></i>
+78
+</a>
+<a class="diff-line-num" data-line-number="79" href="https://gitlab.com/snippets/27287#L79" id="L79">
+<i class="fa fa-link"></i>
+79
+</a>
+<a class="diff-line-num" data-line-number="80" href="https://gitlab.com/snippets/27287#L80" id="L80">
+<i class="fa fa-link"></i>
+80
+</a>
+<a class="diff-line-num" data-line-number="81" href="https://gitlab.com/snippets/27287#L81" id="L81">
+<i class="fa fa-link"></i>
+81
+</a>
+<a class="diff-line-num" data-line-number="82" href="https://gitlab.com/snippets/27287#L82" id="L82">
+<i class="fa fa-link"></i>
+82
+</a>
+<a class="diff-line-num" data-line-number="83" href="https://gitlab.com/snippets/27287#L83" id="L83">
+<i class="fa fa-link"></i>
+83
+</a>
+<a class="diff-line-num" data-line-number="84" href="https://gitlab.com/snippets/27287#L84" id="L84">
+<i class="fa fa-link"></i>
+84
+</a>
+<a class="diff-line-num" data-line-number="85" href="https://gitlab.com/snippets/27287#L85" id="L85">
+<i class="fa fa-link"></i>
+85
+</a>
+<a class="diff-line-num" data-line-number="86" href="https://gitlab.com/snippets/27287#L86" id="L86">
+<i class="fa fa-link"></i>
+86
+</a>
+<a class="diff-line-num" data-line-number="87" href="https://gitlab.com/snippets/27287#L87" id="L87">
+<i class="fa fa-link"></i>
+87
+</a>
+<a class="diff-line-num" data-line-number="88" href="https://gitlab.com/snippets/27287#L88" id="L88">
+<i class="fa fa-link"></i>
+88
+</a>
+<a class="diff-line-num" data-line-number="89" href="https://gitlab.com/snippets/27287#L89" id="L89">
+<i class="fa fa-link"></i>
+89
+</a>
+<a class="diff-line-num" data-line-number="90" href="https://gitlab.com/snippets/27287#L90" id="L90">
+<i class="fa fa-link"></i>
+90
+</a>
+<a class="diff-line-num" data-line-number="91" href="https://gitlab.com/snippets/27287#L91" id="L91">
+<i class="fa fa-link"></i>
+91
+</a>
+<a class="diff-line-num" data-line-number="92" href="https://gitlab.com/snippets/27287#L92" id="L92">
+<i class="fa fa-link"></i>
+92
+</a>
+<a class="diff-line-num" data-line-number="93" href="https://gitlab.com/snippets/27287#L93" id="L93">
+<i class="fa fa-link"></i>
+93
+</a>
+<a class="diff-line-num" data-line-number="94" href="https://gitlab.com/snippets/27287#L94" id="L94">
+<i class="fa fa-link"></i>
+94
+</a>
+<a class="diff-line-num" data-line-number="95" href="https://gitlab.com/snippets/27287#L95" id="L95">
+<i class="fa fa-link"></i>
+95
+</a>
+<a class="diff-line-num" data-line-number="96" href="https://gitlab.com/snippets/27287#L96" id="L96">
+<i class="fa fa-link"></i>
+96
+</a>
+<a class="diff-line-num" data-line-number="97" href="https://gitlab.com/snippets/27287#L97" id="L97">
+<i class="fa fa-link"></i>
+97
+</a>
+<a class="diff-line-num" data-line-number="98" href="https://gitlab.com/snippets/27287#L98" id="L98">
+<i class="fa fa-link"></i>
+98
+</a>
+<a class="diff-line-num" data-line-number="99" href="https://gitlab.com/snippets/27287#L99" id="L99">
+<i class="fa fa-link"></i>
+99
+</a>
+<a class="diff-line-num" data-line-number="100" href="https://gitlab.com/snippets/27287#L100" id="L100">
+<i class="fa fa-link"></i>
+100
+</a>
+<a class="diff-line-num" data-line-number="101" href="https://gitlab.com/snippets/27287#L101" id="L101">
+<i class="fa fa-link"></i>
+101
+</a>
+<a class="diff-line-num" data-line-number="102" href="https://gitlab.com/snippets/27287#L102" id="L102">
+<i class="fa fa-link"></i>
+102
+</a>
+<a class="diff-line-num" data-line-number="103" href="https://gitlab.com/snippets/27287#L103" id="L103">
+<i class="fa fa-link"></i>
+103
+</a>
+<a class="diff-line-num" data-line-number="104" href="https://gitlab.com/snippets/27287#L104" id="L104">
+<i class="fa fa-link"></i>
+104
+</a>
+<a class="diff-line-num" data-line-number="105" href="https://gitlab.com/snippets/27287#L105" id="L105">
+<i class="fa fa-link"></i>
+105
+</a>
+<a class="diff-line-num" data-line-number="106" href="https://gitlab.com/snippets/27287#L106" id="L106">
+<i class="fa fa-link"></i>
+106
+</a>
+<a class="diff-line-num" data-line-number="107" href="https://gitlab.com/snippets/27287#L107" id="L107">
+<i class="fa fa-link"></i>
+107
+</a>
+<a class="diff-line-num" data-line-number="108" href="https://gitlab.com/snippets/27287#L108" id="L108">
+<i class="fa fa-link"></i>
+108
+</a>
+<a class="diff-line-num" data-line-number="109" href="https://gitlab.com/snippets/27287#L109" id="L109">
+<i class="fa fa-link"></i>
+109
+</a>
+<a class="diff-line-num" data-line-number="110" href="https://gitlab.com/snippets/27287#L110" id="L110">
+<i class="fa fa-link"></i>
+110
+</a>
+<a class="diff-line-num" data-line-number="111" href="https://gitlab.com/snippets/27287#L111" id="L111">
+<i class="fa fa-link"></i>
+111
+</a>
+<a class="diff-line-num" data-line-number="112" href="https://gitlab.com/snippets/27287#L112" id="L112">
+<i class="fa fa-link"></i>
+112
+</a>
+<a class="diff-line-num" data-line-number="113" href="https://gitlab.com/snippets/27287#L113" id="L113">
+<i class="fa fa-link"></i>
+113
+</a>
+<a class="diff-line-num" data-line-number="114" href="https://gitlab.com/snippets/27287#L114" id="L114">
+<i class="fa fa-link"></i>
+114
+</a>
+<a class="diff-line-num" data-line-number="115" href="https://gitlab.com/snippets/27287#L115" id="L115">
+<i class="fa fa-link"></i>
+115
+</a>
+<a class="diff-line-num" data-line-number="116" href="https://gitlab.com/snippets/27287#L116" id="L116">
+<i class="fa fa-link"></i>
+116
+</a>
+<a class="diff-line-num" data-line-number="117" href="https://gitlab.com/snippets/27287#L117" id="L117">
+<i class="fa fa-link"></i>
+117
+</a>
+<a class="diff-line-num" data-line-number="118" href="https://gitlab.com/snippets/27287#L118" id="L118">
+<i class="fa fa-link"></i>
+118
+</a>
+<a class="diff-line-num" data-line-number="119" href="https://gitlab.com/snippets/27287#L119" id="L119">
+<i class="fa fa-link"></i>
+119
+</a>
+<a class="diff-line-num" data-line-number="120" href="https://gitlab.com/snippets/27287#L120" id="L120">
+<i class="fa fa-link"></i>
+120
+</a>
+<a class="diff-line-num" data-line-number="121" href="https://gitlab.com/snippets/27287#L121" id="L121">
+<i class="fa fa-link"></i>
+121
+</a>
+<a class="diff-line-num" data-line-number="122" href="https://gitlab.com/snippets/27287#L122" id="L122">
+<i class="fa fa-link"></i>
+122
+</a>
+<a class="diff-line-num" data-line-number="123" href="https://gitlab.com/snippets/27287#L123" id="L123">
+<i class="fa fa-link"></i>
+123
+</a>
+<a class="diff-line-num" data-line-number="124" href="https://gitlab.com/snippets/27287#L124" id="L124">
+<i class="fa fa-link"></i>
+124
+</a>
+<a class="diff-line-num" data-line-number="125" href="https://gitlab.com/snippets/27287#L125" id="L125">
+<i class="fa fa-link"></i>
+125
+</a>
+<a class="diff-line-num" data-line-number="126" href="https://gitlab.com/snippets/27287#L126" id="L126">
+<i class="fa fa-link"></i>
+126
+</a>
+<a class="diff-line-num" data-line-number="127" href="https://gitlab.com/snippets/27287#L127" id="L127">
+<i class="fa fa-link"></i>
+127
+</a>
+<a class="diff-line-num" data-line-number="128" href="https://gitlab.com/snippets/27287#L128" id="L128">
+<i class="fa fa-link"></i>
+128
+</a>
+<a class="diff-line-num" data-line-number="129" href="https://gitlab.com/snippets/27287#L129" id="L129">
+<i class="fa fa-link"></i>
+129
+</a>
+<a class="diff-line-num" data-line-number="130" href="https://gitlab.com/snippets/27287#L130" id="L130">
+<i class="fa fa-link"></i>
+130
+</a>
+<a class="diff-line-num" data-line-number="131" href="https://gitlab.com/snippets/27287#L131" id="L131">
+<i class="fa fa-link"></i>
+131
+</a>
+<a class="diff-line-num" data-line-number="132" href="https://gitlab.com/snippets/27287#L132" id="L132">
+<i class="fa fa-link"></i>
+132
+</a>
+<a class="diff-line-num" data-line-number="133" href="https://gitlab.com/snippets/27287#L133" id="L133">
+<i class="fa fa-link"></i>
+133
+</a>
+<a class="diff-line-num" data-line-number="134" href="https://gitlab.com/snippets/27287#L134" id="L134">
+<i class="fa fa-link"></i>
+134
+</a>
+<a class="diff-line-num" data-line-number="135" href="https://gitlab.com/snippets/27287#L135" id="L135">
+<i class="fa fa-link"></i>
+135
+</a>
+<a class="diff-line-num" data-line-number="136" href="https://gitlab.com/snippets/27287#L136" id="L136">
+<i class="fa fa-link"></i>
+136
+</a>
+<a class="diff-line-num" data-line-number="137" href="https://gitlab.com/snippets/27287#L137" id="L137">
+<i class="fa fa-link"></i>
+137
+</a>
+<a class="diff-line-num" data-line-number="138" href="https://gitlab.com/snippets/27287#L138" id="L138">
+<i class="fa fa-link"></i>
+138
+</a>
+<a class="diff-line-num" data-line-number="139" href="https://gitlab.com/snippets/27287#L139" id="L139">
+<i class="fa fa-link"></i>
+139
+</a>
+<a class="diff-line-num" data-line-number="140" href="https://gitlab.com/snippets/27287#L140" id="L140">
+<i class="fa fa-link"></i>
+140
+</a>
+<a class="diff-line-num" data-line-number="141" href="https://gitlab.com/snippets/27287#L141" id="L141">
+<i class="fa fa-link"></i>
+141
+</a>
+<a class="diff-line-num" data-line-number="142" href="https://gitlab.com/snippets/27287#L142" id="L142">
+<i class="fa fa-link"></i>
+142
+</a>
+<a class="diff-line-num" data-line-number="143" href="https://gitlab.com/snippets/27287#L143" id="L143">
+<i class="fa fa-link"></i>
+143
+</a>
+<a class="diff-line-num" data-line-number="144" href="https://gitlab.com/snippets/27287#L144" id="L144">
+<i class="fa fa-link"></i>
+144
+</a>
+<a class="diff-line-num" data-line-number="145" href="https://gitlab.com/snippets/27287#L145" id="L145">
+<i class="fa fa-link"></i>
+145
+</a>
+<a class="diff-line-num" data-line-number="146" href="https://gitlab.com/snippets/27287#L146" id="L146">
+<i class="fa fa-link"></i>
+146
+</a>
+<a class="diff-line-num" data-line-number="147" href="https://gitlab.com/snippets/27287#L147" id="L147">
+<i class="fa fa-link"></i>
+147
+</a>
+<a class="diff-line-num" data-line-number="148" href="https://gitlab.com/snippets/27287#L148" id="L148">
+<i class="fa fa-link"></i>
+148
+</a>
+<a class="diff-line-num" data-line-number="149" href="https://gitlab.com/snippets/27287#L149" id="L149">
+<i class="fa fa-link"></i>
+149
+</a>
+<a class="diff-line-num" data-line-number="150" href="https://gitlab.com/snippets/27287#L150" id="L150">
+<i class="fa fa-link"></i>
+150
+</a>
+<a class="diff-line-num" data-line-number="151" href="https://gitlab.com/snippets/27287#L151" id="L151">
+<i class="fa fa-link"></i>
+151
+</a>
+<a class="diff-line-num" data-line-number="152" href="https://gitlab.com/snippets/27287#L152" id="L152">
+<i class="fa fa-link"></i>
+152
+</a>
+<a class="diff-line-num" data-line-number="153" href="https://gitlab.com/snippets/27287#L153" id="L153">
+<i class="fa fa-link"></i>
+153
+</a>
+<a class="diff-line-num" data-line-number="154" href="https://gitlab.com/snippets/27287#L154" id="L154">
+<i class="fa fa-link"></i>
+154
+</a>
+<a class="diff-line-num" data-line-number="155" href="https://gitlab.com/snippets/27287#L155" id="L155">
+<i class="fa fa-link"></i>
+155
+</a>
+<a class="diff-line-num" data-line-number="156" href="https://gitlab.com/snippets/27287#L156" id="L156">
+<i class="fa fa-link"></i>
+156
+</a>
+<a class="diff-line-num" data-line-number="157" href="https://gitlab.com/snippets/27287#L157" id="L157">
+<i class="fa fa-link"></i>
+157
+</a>
+<a class="diff-line-num" data-line-number="158" href="https://gitlab.com/snippets/27287#L158" id="L158">
+<i class="fa fa-link"></i>
+158
+</a>
+<a class="diff-line-num" data-line-number="159" href="https://gitlab.com/snippets/27287#L159" id="L159">
+<i class="fa fa-link"></i>
+159
+</a>
+<a class="diff-line-num" data-line-number="160" href="https://gitlab.com/snippets/27287#L160" id="L160">
+<i class="fa fa-link"></i>
+160
+</a>
+<a class="diff-line-num" data-line-number="161" href="https://gitlab.com/snippets/27287#L161" id="L161">
+<i class="fa fa-link"></i>
+161
+</a>
+<a class="diff-line-num" data-line-number="162" href="https://gitlab.com/snippets/27287#L162" id="L162">
+<i class="fa fa-link"></i>
+162
+</a>
+<a class="diff-line-num" data-line-number="163" href="https://gitlab.com/snippets/27287#L163" id="L163">
+<i class="fa fa-link"></i>
+163
+</a>
+<a class="diff-line-num" data-line-number="164" href="https://gitlab.com/snippets/27287#L164" id="L164">
+<i class="fa fa-link"></i>
+164
+</a>
+<a class="diff-line-num" data-line-number="165" href="https://gitlab.com/snippets/27287#L165" id="L165">
+<i class="fa fa-link"></i>
+165
+</a>
+<a class="diff-line-num" data-line-number="166" href="https://gitlab.com/snippets/27287#L166" id="L166">
+<i class="fa fa-link"></i>
+166
+</a>
+<a class="diff-line-num" data-line-number="167" href="https://gitlab.com/snippets/27287#L167" id="L167">
+<i class="fa fa-link"></i>
+167
+</a>
+<a class="diff-line-num" data-line-number="168" href="https://gitlab.com/snippets/27287#L168" id="L168">
+<i class="fa fa-link"></i>
+168
+</a>
+<a class="diff-line-num" data-line-number="169" href="https://gitlab.com/snippets/27287#L169" id="L169">
+<i class="fa fa-link"></i>
+169
+</a>
+<a class="diff-line-num" data-line-number="170" href="https://gitlab.com/snippets/27287#L170" id="L170">
+<i class="fa fa-link"></i>
+170
+</a>
+<a class="diff-line-num" data-line-number="171" href="https://gitlab.com/snippets/27287#L171" id="L171">
+<i class="fa fa-link"></i>
+171
+</a>
+</div>
+<div class="blob-content" data-blob-id="27287">
+<pre class="code highlight"><code><span id="LC1" class="line"><span class="c"># ===================================================== Interfaces =====================================================</span></span>
+<span id="LC2" class="line"><span class="k">class</span> <span class="nc">IBasicList</span><span class="p">:</span></span>
+<span id="LC3" class="line">    <span class="k">def</span> <span class="nf">prepend</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="p">):</span></span>
+<span id="LC4" class="line">        <span class="s">""" L.prepend(object) -&gt; None -- prepend object to start"""</span></span>
+<span id="LC5" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC6" class="line"></span>
+<span id="LC7" class="line">    <span class="k">def</span> <span class="nf">append</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="p">):</span></span>
+<span id="LC8" class="line">        <span class="s">""" L.append(object) -&gt; None -- append object to end """</span></span>
+<span id="LC9" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC10" class="line"></span>
+<span id="LC11" class="line">    <span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></span>
+<span id="LC12" class="line">        <span class="s">""" L.clear() -&gt; None -- remove all items from L """</span></span>
+<span id="LC13" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC14" class="line"></span>
+<span id="LC15" class="line">    <span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span></span>
+<span id="LC16" class="line">        <span class="s">"""</span></span>
+<span id="LC17" class="line"><span class="s">        L.pop(index) -&gt; item -- remove and return item at index (default last).</span></span>
+<span id="LC18" class="line"><span class="s">        Raises IndexError if list is empty or index is out of range.</span></span>
+<span id="LC19" class="line"><span class="s">        """</span></span>
+<span id="LC20" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC21" class="line"></span>
+<span id="LC22" class="line">    <span class="k">def</span> <span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">_object</span><span class="p">):</span></span>
+<span id="LC23" class="line">        <span class="s">""" L.insert(index, object) -- insert object before index """</span></span>
+<span id="LC24" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC25" class="line"></span>
+<span id="LC26" class="line">    <span class="k">def</span> <span class="nf">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></span>
+<span id="LC27" class="line">        <span class="s">""" Return len(self). """</span></span>
+<span id="LC28" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC29" class="line"></span>
+<span id="LC30" class="line">    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></span>
+<span id="LC31" class="line">        <span class="s">""" Return the List as a str """</span></span>
+<span id="LC32" class="line">        <span class="c"># Note: Not checked in tests</span></span>
+<span id="LC33" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC34" class="line"></span>
+<span id="LC35" class="line">    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></span>
+<span id="LC36" class="line">        <span class="s">""" Return string representation of the List object """</span></span>
+<span id="LC37" class="line">        <span class="c"># Note: Not checked in tests</span></span>
+<span id="LC38" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC39" class="line"></span>
+<span id="LC40" class="line"></span>
+<span id="LC41" class="line"><span class="k">class</span> <span class="nc">IListSyntax</span><span class="p">:</span></span>
+<span id="LC42" class="line">    <span class="k">def</span> <span class="nf">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span></span>
+<span id="LC43" class="line">        <span class="s">"""</span></span>
+<span id="LC44" class="line"><span class="s">        x.__setitem__(index, value) &lt;==&gt; x[index] = value.</span></span>
+<span id="LC45" class="line"><span class="s">        Raises IndexError if index out of range.</span></span>
+<span id="LC46" class="line"><span class="s">        """</span></span>
+<span id="LC47" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC48" class="line"></span>
+<span id="LC49" class="line">    <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span></span>
+<span id="LC50" class="line">        <span class="s">"""</span></span>
+<span id="LC51" class="line"><span class="s">        x.__getitem__(y) &lt;==&gt; x[y]</span></span>
+<span id="LC52" class="line"><span class="s">        Raise IndexError if index out of range.</span></span>
+<span id="LC53" class="line"><span class="s">        """</span></span>
+<span id="LC54" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC55" class="line"></span>
+<span id="LC56" class="line">    <span class="k">def</span> <span class="nf">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span></span>
+<span id="LC57" class="line">        <span class="s">"""</span></span>
+<span id="LC58" class="line"><span class="s">        x.__contains__(value) &lt;==&gt; value in x</span></span>
+<span id="LC59" class="line"><span class="s">        """</span></span>
+<span id="LC60" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC61" class="line"></span>
+<span id="LC62" class="line">    <span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span></span>
+<span id="LC63" class="line">        <span class="s">""" Return self+value. """</span></span>
+<span id="LC64" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC65" class="line"></span>
+<span id="LC66" class="line">    <span class="k">def</span> <span class="nf">__iadd__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span></span>
+<span id="LC67" class="line">        <span class="s">""" Implement self+=value. """</span></span>
+<span id="LC68" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC69" class="line"></span>
+<span id="LC70" class="line"></span>
+<span id="LC71" class="line"><span class="k">class</span> <span class="nc">IComparable</span><span class="p">:</span></span>
+<span id="LC72" class="line">    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span></span>
+<span id="LC73" class="line">        <span class="s">"""</span></span>
+<span id="LC74" class="line"><span class="s">        Return self == value.</span></span>
+<span id="LC75" class="line"><span class="s">        Content comparison</span></span>
+<span id="LC76" class="line"><span class="s">        Value must have implemented __getitem__</span></span>
+<span id="LC77" class="line"><span class="s">        """</span></span>
+<span id="LC78" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC79" class="line"></span>
+<span id="LC80" class="line">    <span class="k">def</span> <span class="nf">__ge__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span></span>
+<span id="LC81" class="line">        <span class="s">"""</span></span>
+<span id="LC82" class="line"><span class="s">        Return self &gt;= value.</span></span>
+<span id="LC83" class="line"><span class="s">        Length comparison</span></span>
+<span id="LC84" class="line"><span class="s">        """</span></span>
+<span id="LC85" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC86" class="line"></span>
+<span id="LC87" class="line">    <span class="k">def</span> <span class="nf">__gt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span></span>
+<span id="LC88" class="line">        <span class="s">"""</span></span>
+<span id="LC89" class="line"><span class="s">        Return self &gt; value.</span></span>
+<span id="LC90" class="line"><span class="s">        Length comparison</span></span>
+<span id="LC91" class="line"><span class="s">        """</span></span>
+<span id="LC92" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC93" class="line"></span>
+<span id="LC94" class="line">    <span class="k">def</span> <span class="nf">__le__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span></span>
+<span id="LC95" class="line">        <span class="s">"""</span></span>
+<span id="LC96" class="line"><span class="s">        Return self &lt;= value.</span></span>
+<span id="LC97" class="line"><span class="s">        Length comparison</span></span>
+<span id="LC98" class="line"><span class="s">        """</span></span>
+<span id="LC99" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC100" class="line"></span>
+<span id="LC101" class="line">    <span class="k">def</span> <span class="nf">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span></span>
+<span id="LC102" class="line">        <span class="s">"""</span></span>
+<span id="LC103" class="line"><span class="s">        Return self &lt; value.</span></span>
+<span id="LC104" class="line"><span class="s">        Length comparison</span></span>
+<span id="LC105" class="line"><span class="s">        """</span></span>
+<span id="LC106" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC107" class="line"></span>
+<span id="LC108" class="line">    <span class="k">def</span> <span class="nf">__ne__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span></span>
+<span id="LC109" class="line">        <span class="s">"""</span></span>
+<span id="LC110" class="line"><span class="s">        Return self != value.</span></span>
+<span id="LC111" class="line"><span class="s">        Content comparison</span></span>
+<span id="LC112" class="line"><span class="s">        Value must have implemented __getitem__</span></span>
+<span id="LC113" class="line"><span class="s">        """</span></span>
+<span id="LC114" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC115" class="line"></span>
+<span id="LC116" class="line"></span>
+<span id="LC117" class="line"><span class="k">class</span> <span class="nc">IListExtra</span><span class="p">:</span></span>
+<span id="LC118" class="line">    <span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span></span>
+<span id="LC119" class="line">        <span class="s">""" L.count(value) -&gt; integer -- return number of occurrences of value """</span></span>
+<span id="LC120" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC121" class="line"></span>
+<span id="LC122" class="line">    <span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span></span>
+<span id="LC123" class="line">        <span class="s">"""</span></span>
+<span id="LC124" class="line"><span class="s">        L.index(value) -&gt; integer -- return first index of value.</span></span>
+<span id="LC125" class="line"><span class="s">        Raises ValueError if the value is not present.</span></span>
+<span id="LC126" class="line"><span class="s">        """</span></span>
+<span id="LC127" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC128" class="line"></span>
+<span id="LC129" class="line">    <span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span></span>
+<span id="LC130" class="line">        <span class="s">"""</span></span>
+<span id="LC131" class="line"><span class="s">        L.remove(value) -&gt; None -- remove first occurrence of value.</span></span>
+<span id="LC132" class="line"><span class="s">        Raises ValueError if the value is not present.</span></span>
+<span id="LC133" class="line"><span class="s">        """</span></span>
+<span id="LC134" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC135" class="line"></span>
+<span id="LC136" class="line">    <span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></span>
+<span id="LC137" class="line">        <span class="s">""" L.reverse() -- reverse *IN PLACE* """</span></span>
+<span id="LC138" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC139" class="line"></span>
+<span id="LC140" class="line">    <span class="k">def</span> <span class="nf">sort</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span></span>
+<span id="LC141" class="line">        <span class="s">""" L.sort(reverse=False) -&gt; None -- sort *IN PLACE* """</span></span>
+<span id="LC142" class="line">        <span class="k">raise</span> <span class="nb">NotImplementedError</span></span>
+<span id="LC143" class="line"></span>
+<span id="LC144" class="line"></span>
+<span id="LC145" class="line"><span class="c"># =================================================== Implementation ===================================================</span></span>
+<span id="LC146" class="line"><span class="k">class</span> <span class="nc">_Link</span><span class="p">:</span></span>
+<span id="LC147" class="line">    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">next_link</span><span class="p">):</span></span>
+<span id="LC148" class="line">        <span class="bp">self</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="n">obj</span></span>
+<span id="LC149" class="line">        <span class="bp">self</span><span class="o">.</span><span class="n">next_link</span> <span class="o">=</span> <span class="n">next_link</span></span>
+<span id="LC150" class="line"></span>
+<span id="LC151" class="line">    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></span>
+<span id="LC152" class="line">        <span class="k">return</span> <span class="s">"({content}, {next_link})"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span></span>
+<span id="LC153" class="line">            <span class="n">content</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">content</span><span class="p">,</span></span>
+<span id="LC154" class="line">            <span class="n">next_link</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">next_link</span></span>
+<span id="LC155" class="line">        <span class="p">)</span></span>
+<span id="LC156" class="line"></span>
+<span id="LC157" class="line"></span>
+<span id="LC158" class="line"><span class="k">class</span> <span class="nc">LinkedList</span><span class="p">(</span><span class="n">IBasicList</span><span class="p">,</span> <span class="n">IListSyntax</span><span class="p">,</span> <span class="n">IComparable</span><span class="p">,</span> <span class="n">IListExtra</span><span class="p">):</span></span>
+<span id="LC159" class="line">    <span class="n">first</span> <span class="o">=</span> <span class="bp">None</span></span>
+<span id="LC160" class="line">    <span class="n">size</span> <span class="o">=</span> <span class="mi">0</span></span>
+<span id="LC161" class="line"></span>
+<span id="LC162" class="line">    <span class="c"># TODO: Implement your interfaces here</span></span>
+<span id="LC163" class="line">    </span>
+<span id="LC164" class="line">    <span class="c"># Examples</span></span>
+<span id="LC165" class="line">    </span>
+<span id="LC166" class="line">    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></span>
+<span id="LC167" class="line">        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">first</span><span class="p">)</span></span>
+<span id="LC168" class="line"></span>
+<span id="LC169" class="line">    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></span>
+<span id="LC170" class="line">        <span class="c"># TODO: Implement</span></span>
+<span id="LC171" class="line">        <span class="k">pass</span></span></code></pre>
+</div>
+</div>
+
+
+</article>
+<div class="awards js-awards-block" data-award-url="/snippets/27287/toggle_award_emoji">
+<button class="award-control btn has-tooltip js-emoji-btn" data-placement="bottom" data-title="" type="button">
+<img class="icon emoji" title="thumbsup" height="20px" width="20px" src="./Linked List · Snippets · GitLab_files/1F44D-59ec2457ab33e8897261d01a495f6cf5c668d0004807dc541c3b1be5294b1e61.png" data-aliases="" data-emoji="thumbsup" data-unicode-name="1F44D">
+<span class="award-control-text js-counter">
+0
+</span>
+</button>
+<button class="award-control btn has-tooltip js-emoji-btn" data-placement="bottom" data-title="" type="button">
+<img class="icon emoji" title="thumbsdown" height="20px" width="20px" src="./Linked List · Snippets · GitLab_files/1F44E-5954334e2dae5357312b3d629f10a496c728029e02216f8c8b887f9b51561c61.png" data-aliases="" data-emoji="thumbsdown" data-unicode-name="1F44E">
+<span class="award-control-text js-counter">
+0
+</span>
+</button>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="device-xs visible-xs"></div><div class="device-sm visible-sm"></div><div class="device-md visible-md"></div><div class="device-lg visible-lg"></div></body></html>

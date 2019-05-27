@@ -1,0 +1,25 @@
+body {
+    background: #fae4e4;
+    text-align: center;
+}
+
+#gameboard {
+    width: 424px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: inline-block;
+    margin: 3px;
+
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    cursor: pointer;
+    border: 8px solid white;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
